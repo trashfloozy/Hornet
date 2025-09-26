@@ -158,7 +158,7 @@ switch ($backupInput.ToLower()) {
   {($_ -eq "b") -or ($_ -eq "backup")} {
     backupSecurity
     CopyBackup
-    exite
+    exit
   }
   {($_ -eq "r") -or ($_ -eq "restore")} {
     restoreSecurity
@@ -175,4 +175,5 @@ switch ($backupInput.ToLower()) {
     Pause
     exit
   }
+
 }

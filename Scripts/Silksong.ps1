@@ -1,7 +1,7 @@
 $silksongSavePath = "$env:USERPROFILE\AppData\LocalLow\Team Cherry\Hollow Knight Silksong\"
 $silksongBackupPath = "$env:USERPROFILE\Desktop\Steam Backup Save\"
 
-$emergencySave = "$env:USERPROFILE\Desktop\Steam Backup Save\EMERGENCY\"
+$emergencySave = "$env:USERPROFILE\Desktop\Steam Backup Save\EMERGENCY\Silksong\"
 
 $silksongBackupedPath = "$env:USERPROFILE\Desktop\Steam Backup Save\Hollow Knight Silksong\"
 $silksongRestorePath = "$env:USERPROFILE\AppData\LocalLow\Team Cherry\"
@@ -175,5 +175,4 @@ switch ($backupInput.ToLower()) {
     Pause
     exit
   }
-
 }

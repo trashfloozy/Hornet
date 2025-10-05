@@ -1,5 +1,5 @@
 if ($PSVersionTable.PSVersion.Major -lt 7) {
-    Write-Host "Restarting in PowerShell 7..."
+    Write-Host "Restarting in PowerShell 7... run command again!"
     $pwsh = "pwsh.exe"   # path to PowerShell 7
     & $pwsh $PSCommandPath @args
     exit
@@ -25,3 +25,4 @@ switch ($userInput) {
         Write-Host -Object "Unknown answer." -ForegroundColor Red
     }
 }
+

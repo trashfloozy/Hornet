@@ -21,13 +21,10 @@ switch ($userInput) {
     }
     "Exit" {
         Write-Host -Object "Exiting..."
-        Pause
     }
     default {
         Write-Host -Object "Unknown answer." -ForegroundColor Red
     }
-    Pause
 }
 
-
-
+Pause

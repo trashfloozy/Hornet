@@ -14,16 +14,22 @@ $userInput = $choices | Out-ConsoleGridView -Title "Select your game and press e
 switch ($userInput) {
     "Silksong" {
         Invoke-WebRequest -useb https://raw.githubusercontent.com/trashfloozy/Hornet/refs/heads/main/Scripts/Silksong.ps1 | Invoke-Expression
+        Pause
     }
     "Hollow Knight" {
         Invoke-WebRequest -useb https://raw.githubusercontent.com/trashfloozy/Hornet/refs/heads/main/Scripts/Hollow%20Knight.ps1 | Invoke-Expression
+        Pause
     }
     "Exit" {
         Write-Host -Object "Exiting..."
+        Pause
         exit
     }
     default {
         Write-Host -Object "Unknown answer." -ForegroundColor Red
+        Pause
     }
+    Pause
 }
+
 

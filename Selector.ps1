@@ -20,10 +20,12 @@ switch ($userInput) {
     }
     "Exit" {
         Write-Host -Object "Exiting..."
+        exit
     }
     default {
         Write-Host -Object "Unknown answer." -ForegroundColor Red
     }
 }
+
 
 

@@ -25,6 +25,3 @@ switch ($userInput) {
         Write-Host -Object "Unknown answer." -ForegroundColor Red
     }
 }
-
-Pause
-

@@ -12,8 +12,11 @@ $choices = @("Hornet", "Exit")
 $userInput = $choices | Out-ConsoleGridView -Title "Select your game and press enter!" -OutputMode Single
 
 switch ($userInput) {
-    "Hornet" {
+    "Silksong" {
         Invoke-WebRequest -useb https://raw.githubusercontent.com/trashfloozy/Hornet/refs/heads/main/Scripts/Silksong.ps1 | Invoke-Expression
+    }
+    "Hollow Knight" {
+        Invoke-WebRequest -useb https://raw.githubusercontent.com/trashfloozy/Hornet/refs/heads/main/Scripts/Hollow%20Knight.ps1 | Invoke-Expression
     }
     "Exit" {
         Write-Host -Object "Exiting..."

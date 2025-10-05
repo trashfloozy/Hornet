@@ -7,7 +7,7 @@ if ($PSVersionTable.PSVersion.Major -lt 7) {
 
 Clear-Host
 Install-Module Microsoft.PowerShell.ConsoleGuiTools
-$choices = @("Hornet", "Hollow Knight", "Exit")
+$choices = @("Silksong", "Hollow Knight", "Exit")
 
 $userInput = $choices | Out-ConsoleGridView -Title "Select your game and press enter!" -OutputMode Single
 
@@ -25,4 +25,5 @@ switch ($userInput) {
         Write-Host -Object "Unknown answer." -ForegroundColor Red
     }
 }
+
 
